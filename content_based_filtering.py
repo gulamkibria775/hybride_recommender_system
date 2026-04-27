@@ -10,7 +10,7 @@ from data_cleaning import data_for_content_filtering
 from scipy.sparse import save_npz
 
 # Cleaned Data Path
-CLEANED_DATA_PATH = "data/processed/cleaned_data.csv"
+CLEANED_DATA_PATH = "data/cleaned_data.csv"
 
 # cols to transform
 frequency_enode_cols = ['year']
@@ -153,7 +153,7 @@ def main(data_path):
     # transform the data
     transformed_data = transform_data(data_content_filtering)
     #save transformed data
-    save_transformed_data(transformed_data,"data/processed/transformed_data.npz")
+    save_transformed_data(transformed_data,"data/transformed_data.npz")
     
 if __name__ == "__main__":
     main(CLEANED_DATA_PATH)
