@@ -219,4 +219,5 @@ __marimo__/
 data/
 /transformer.joblib
 
-/hybrid_recommendations.py
+
+/data
